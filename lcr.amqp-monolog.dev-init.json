@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "lcr/amqp-monolog": {
+            "manifest": {
+                "bundles": {
+                    "Lcr\\MonologAmqp\\MonologAmqpBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                }
+            },
+            "files": {
+                "config/packages/monolog-amqp.yaml": {
+                    "contents": [
+                        "monolog-amqp:",
+                        "    host: 'hub-rabbitmq'",
+                        "    port: '5672'",
+                        "    user: 'isra'",
+                        "    password: 'tada'",
+                        "    formater: 'Monolog\\Formatter\\LineFormatter'",
+                        "    formater_class: 'Monolog\\Formatter\\LineFormatter'",
+                        "    arguments: \"[%%datetime%%] [%%extra.token%%] %%channel%%.%%level_name%%: %%message%% %%context%% %%extra%%\n\"",
+                        ""
+
+                      
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "277fedee94a876adb44b4646c9cc2be940cc6d2b"
+        }
+    }
+}
