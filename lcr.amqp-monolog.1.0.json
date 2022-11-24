@@ -10,7 +10,7 @@
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%"
                 },
-		"aliases": ["monologamqplcr, lcrmonologamqp"]
+		"aliases": ["monologamqplcr", "lcrmonologamqp"]
             },
             "files": {
                 "config/packages/monolog-amqp.yaml": {
