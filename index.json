@@ -1,7 +1,7 @@
 {
     "recipes": {
         "lcr/amqp-monolog": [
-            "1.0"
+            "1.0-dev"
         ]
     },
     "branch": "master",
