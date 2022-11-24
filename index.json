@@ -1,0 +1,14 @@
+{
+    "recipes": {
+        "lcr/amqp-monolog": [
+            "1.0"
+        ]
+    },
+    "branch": "master",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/israelsantander/recipes",
+        "origin_template": "lcr/amqp-template:1.0@github.com/israelsantander/recipes:master",
+        "recipe_template": "https://api.github.com/repos/israelsantander/recipes/contents/lcr.amqp-monolog.1.0.json"
+    }
+}
